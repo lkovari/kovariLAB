@@ -1,0 +1,24 @@
+<mat-toolbar class="header-content" color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a class="home-url" routerLink="/home">Home</a>
+        <sub> of Kővári</sub>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <a routerLink="/owner"> L </a>
+            </li>
+            <li>
+                <a routerLink="/account"> A </a>
+            </li>
+            <li>
+                <a routerLink="/account"> B </a>
+            </li>
+        </ul>
+    </div>
+  </mat-toolbar>

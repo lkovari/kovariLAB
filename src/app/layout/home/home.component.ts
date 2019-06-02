@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as angular from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('Angular v' + angular.VERSION.full);
   }
 
   public executeSelectedChange = (event) => {
