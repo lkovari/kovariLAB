@@ -6,6 +6,7 @@ import { SidenavListComponent } from './components/sidenav/sidenav-list.componen
 import { MaterialModule } from '../material/material-module';
 import { LayoutContentComponent } from './components/layoutcontent/layout-content.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent, SidenavListComponent, LayoutContentComponent],
@@ -14,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     FormsModule,
     MaterialModule,
+    RouterModule,
     FlexLayoutModule,
   ]
 })

@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-The LAB means, László, Ákos and Bálint. This website is an Angular playground for László and also a small webpages for his sons.
+The LAB means, L. Á. and B. This website is an Angular playground for L. and also a small webpages for his sons.
 
 ## Development server
 
