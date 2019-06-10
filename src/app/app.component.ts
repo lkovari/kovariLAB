@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'KovariLAB';
-  lastUpdate = new Date('06/10/2019 10:23 PM');
+  lastUpdate = new Date('06/10/2019 11:13 PM');
 
   ngOnInit() {
     console.log('Last update ' + this.lastUpdate.toString());

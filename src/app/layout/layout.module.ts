@@ -7,6 +7,8 @@ import { MaterialModule } from '../material/material-module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from '../shared/shared.module';
 import { LkovariMainModule } from './lkovari-main/lkovari-main.module';
+import { BkovariMainModule } from './bkovari-main/bkovari-main.module';
+import { AkovariMainModule } from './akovari-main/akovari-main.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LkovariMainModule } from './lkovari-main/lkovari-main.module';
     MaterialModule,
     SharedModule,
     HomeModule,
-    LkovariMainModule
+    LkovariMainModule,
+    AkovariMainModule,
+    BkovariMainModule
   ]
 })
 export class LayoutModule { }

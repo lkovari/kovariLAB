@@ -9,7 +9,9 @@ const routes: Routes = [
     path: '', component: LayoutComponent,
     children: [
       {path: 'home', component: HomeComponent },
-      {path: 'lkovari-main', loadChildren: () => import('./lkovari-main/lkovari-main.module').then(m => m.LkovariMainModule) }
+      {path: 'lkovari-main', loadChildren: () => import('./lkovari-main/lkovari-main.module').then(m => m.LkovariMainModule) },
+      {path: 'bkovari-main', loadChildren: () => import('./bkovari-main/bkovari-main.module').then(m => m.BkovariMainModule) },
+      {path: 'akovari-main', loadChildren: () => import('./akovari-main/akovari-main.module').then(m => m.AkovariMainModule) }
     ]
   }];
 
