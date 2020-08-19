@@ -1,4 +1,10 @@
 .bkovari-page {
+    .img-responsive {
+        width: 40%;
+        height: 30%;
+        float: center;
+        border-radius: 2%;
+    }    
     .align-welcome {
         text-align: center;
     }
@@ -6,6 +12,9 @@
         font-weight: bold;
         margin-bottom: 2rem;
     }
+    .section-bottom {
+        margin-bottom: 2rem;
+    }    
     .pub-item-subtitle {
         color: #3f51b5;
         font-size: 1rem;

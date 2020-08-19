@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bkovari-main.component.scss']
 })
 export class BkovariMainComponent implements OnInit {
-
+  kbDoorCard = 'assets/images/BalintDoorCardSt122.jpg';
   constructor() { }
 
   ngOnInit() {
