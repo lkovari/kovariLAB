@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as angular from '@angular/forms';
 
 @Component({
   selector: 'app-lkovari-main',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lkovari-main.component.scss']
 })
 export class LkovariMainComponent implements OnInit {
-
+  angularVersion: string;
   constructor() { }
 
   ngOnInit() {
+    this.angularVersion = angular.VERSION.full;
   }
 
 }

@@ -8,6 +8,16 @@
     .align-welcome {
         text-align: center;
     }
+    .pub-item-title {
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .pub-item-subtitle {
+        color: #3f51b5;
+        font-size: 1rem;
+        text-shadow: 1px 3px 5px grey;
+        margin: 2rem 0;
+    }    
 }
 section div p{
     color: #3f51b5;

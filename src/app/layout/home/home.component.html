@@ -1,17 +1,19 @@
 <section fxLayout="column" fxFlexAlign="stretch">
+  <div class="home-screen">
   <div fxFlexAlign="center" class="align-welcome">
     <p>Welcome to the KőváriLAB website</p>
   </div>
   <mat-tab-group fxFlexAlign="center" mat-align-tabs="center" (selectedTabChange)="executeSelectedChange($event)">
     <mat-tab label="L"> 
-      <p>I'm a software developer.</p> 
+      <p class="pub-item-subtitle">I'm name is László Kővári I'm a software developer.</p> 
     </mat-tab>
     <mat-tab label="Á">
-       <p>I'm an Aircraft Engineer BSC.(HU) Budapest University of Technology and Economics, Aeronautical departmentand, I'm a Glider Pilot.</p>
+       <p class="pub-item-subtitle">I'm Ákos Kővári my graduation is Aircraft Engineer BSC.(HU) Budapest University of Technology and Economics, Aeronautical departmentand, I'm a Glider Pilot.</p>
       </mat-tab>
     <mat-tab label="B">
-       <p>I'm a Vehicle Engineer BSC.(HU) MSC(EN) Budapest University of Technology and Economics, My specialization is apply reinforcement learning in vehicle dynamics.</p>
+       <p class="pub-item-subtitle">I'm Bálint Kővári my graduation is Vehicle Engineer BSC.(HU) MSC(EN) Budapest University of Technology and Economics, My specialization is apply reinforcement learning in vehicle dynamics.</p>
       </mat-tab>
   </mat-tab-group>
-
+  <label class="last-update">Last update: {{ lastUpdateDate | date:'MM/dd/yyyy HH:mm' }}</label>
+  </div>
 </section>

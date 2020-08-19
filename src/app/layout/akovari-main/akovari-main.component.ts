@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./akovari-main.component.scss']
 })
 export class AkovariMainComponent implements OnInit {
+  kaDiploma = 'assets/images/AkosGraduation2020.jpg';
   kaSilverWreathImagePath = 'assets/images/KovariAkosEzustkoszoru.png';
 
   constructor() { }

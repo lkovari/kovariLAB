@@ -11,15 +11,28 @@ section div + p{
     font-size: 20px;
     padding-bottom: 20px;
 }
-
-mat-tab-group {
-    text-align: center;
-}
-
-mat-tab-group p {
-    padding-top: 20px;
-}
-
-.align-welcome {
-    text-align: center;
+.home-screen {
+    mat-tab-group {
+        text-align: center;
+    }
+    
+    mat-tab-group p {
+        padding-top: 20px;
+    }
+    .pub-item-subtitle {
+        color: #3f51b5;
+        font-size: 1rem;
+        text-shadow: 1px 3px 5px grey;
+        margin: 2rem 0;
+    }    
+    .align-welcome {
+        text-align: center;
+    }
+    .last-update {
+        color: black;
+        text-align: center;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;        
+    }
 }

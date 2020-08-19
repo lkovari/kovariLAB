@@ -1,10 +1,16 @@
 .bkovari-page {
+    .align-welcome {
+        text-align: center;
+    }
     .pub-item-title {
         font-weight: bold;
         margin-bottom: 2rem;
     }
-    .pub-subtitle {
-        font-weight: bold;
+    .pub-item-subtitle {
+        color: #3f51b5;
+        font-size: 1rem;
+        text-shadow: 1px 3px 5px grey;
+        margin: 2rem 0;
     }
     .list-alignment {
         margin-left: 3rem;
