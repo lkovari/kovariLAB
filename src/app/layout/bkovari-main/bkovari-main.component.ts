@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BkovariMainComponent implements OnInit {
   kbDoorCard = 'assets/images/BalintDoorCardSt122.jpg';
+  kbDiploma = 'assets/images/BalintGraduation.jpg';
   constructor() { }
 
   ngOnInit() {
