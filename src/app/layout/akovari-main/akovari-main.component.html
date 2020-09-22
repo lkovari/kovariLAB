@@ -13,6 +13,13 @@
         <div>
           <img class="img-responsive" [src]="kaSilverWreathImagePath">
         </div>
+        <div class="pub-item-subtitle">
+          <label class="pub-item-title">First flying in a "new" glider plane - 2017.07.19.</label>
+          <video class="img-responsive" controls (click)="playVideo($event)" #videoPlayer>
+              <source src="{{ videoSource }}" type="video/mp4" />
+              Browser not supported
+          </video>
+      </div>
       </div>
     </div>
   </div>

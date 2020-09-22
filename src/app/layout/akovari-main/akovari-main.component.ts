@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-akovari-main',
@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class AkovariMainComponent implements OnInit {
   kaDiploma = 'assets/images/AkosGraduation2020.jpg';
   kaSilverWreathImagePath = 'assets/images/KovariAkosEzustkoszoru.png';
+  @ViewChild('videoPlayer') videoplayer: ElementRef;
+  videoSource = 'assets/images/AkosTestAndTry20170719_164515.mp4';
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  playVideo(event: Event) {
+    this.videoplayer.nativeElement.play();
+    console.log('playVideoCalled' + event);
+  }
 }
