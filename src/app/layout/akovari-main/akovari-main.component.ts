@@ -8,6 +8,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class AkovariMainComponent implements OnInit {
   kaDiploma = 'assets/images/AkosGraduation2020.jpg';
   kaSilverWreathImagePath = 'assets/images/KovariAkosEzustkoszoru.png';
+  kankh = 'assets/images/AkosSPL.jpg';
   @ViewChild('videoPlayer') videoplayer: ElementRef;
   videoSource = 'assets/images/AkosTestAndTry20170719_164515.mp4';
 

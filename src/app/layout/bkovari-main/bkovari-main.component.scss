@@ -21,6 +21,10 @@
         text-shadow: 1px 3px 5px grey;
         margin: 2rem 0;
     }
+    .bold-pub-item-subtitle {
+        @extend .pub-item-subtitle;
+        font-weight: bold;
+    }
     .pub-item-title-normal {
         color: #3f51b5;
         font-size: 1rem;
