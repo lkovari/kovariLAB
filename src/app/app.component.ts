@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener} from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'KovariLAB';
-  lastUpdate = new Date('10/16/2020 08:46 PM');
+  lastUpdate = new Date('10/17/2020 10:56 AM');
 
   @HostListener('contextmenu', ['$event'])
   onRightClick(event) {
