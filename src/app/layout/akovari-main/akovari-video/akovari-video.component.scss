@@ -1,0 +1,21 @@
+.akovari-video-content {
+    color: #3f51b5;
+    font-size: 1.2rem;
+    text-shadow: 1px 3px 5px grey;
+    margin: 1rem;    
+    text-align: center;
+    .img-responsive {
+        width: 77%;
+        height: auto;
+        float: center;
+        border-radius: 2%;
+    }
+
+    .align-welcome {
+        text-align: center;
+    }
+
+    .pub-item-title {
+        font-weight: bold;
+    }
+}

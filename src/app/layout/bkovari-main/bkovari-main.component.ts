@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+
 
 @Component({
   selector: 'app-bkovari-main',
@@ -6,11 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bkovari-main.component.scss']
 })
 export class BkovariMainComponent implements OnInit {
-  kbDoorCard = 'assets/images/BalintDoorCardSt122.jpg';
-  kbDiploma = 'assets/images/BalintGraduation.jpg';
-  constructor() { }
+  @ViewChild('sidenav') sidenav: MatSidenav;
+  pageOwner = 'Bálint Kővári';
+  isExpanded = true;
+  showSubmenu = false;
+  isShowing = false;
+  showSubSubMenu = false;
 
-  ngOnInit() {
+  mouseenter() {
+    if (!this.isExpanded) {
+      this.isShowing = true;
+    }
   }
 
+  mouseleave() {
+    if (!this.isExpanded) {
+      this.isShowing = false;
+    }
+  }
+
+  ngOnInit() {
+
+  }
 }

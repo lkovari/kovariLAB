@@ -1,0 +1,21 @@
+.aalint-about-me-content {
+    color: #3f51b5;
+    font-size: 1.2rem;
+    text-shadow: 1px 3px 5px grey;
+    margin: 1rem;
+    .align-all {
+        text-align: center;
+        .about-me-text {
+            padding-bottom: 2rem;
+        }
+        .bold-pub-item-subtitle {
+            font-weight: bold;
+        }
+        .img-responsive {
+            width: 77%;
+            height: auto;
+            float: center;
+            border-radius: 2%;
+        }
+    }
+}

@@ -1,43 +1,54 @@
-.akos-page {
-    .img-responsive {
+.akovari-main-content {
+    .akovari-container {
+        height: calc(100vh - 10rem);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .akovari-sidenav-content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .akovari-sidenav {
+        user-select: none;
+    }
+
+    .full-width {
         width: 100%;
-        height: auto;
-        float: center;
-        border-radius: 2%;
     }
-    .align-welcome {
-        text-align: center;
+
+    .menu-button {
+        transition: 300ms ease-in-out;
+        transform: rotate(0deg);
     }
-    .pub-item-title {
-        font-weight: bold;
-        margin-bottom: 2rem;
+
+    .menu-button.rotated {
+        transform: rotate(180deg);
     }
-    .pub-item-subtitle {
-        color: #3f51b5;
-        font-size: 1rem;
-        text-shadow: 1px 3px 5px grey;
-        margin: 2rem 0;
-    }    
-}
-section div p{
-    color: #3f51b5;
-    font-size: 30px;
-    text-shadow: 2px 3px 5px grey;
-    margin: 30px 0;
-}
 
-section div + p{
-    color: #3f51b5;
-    font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
+    .submenu {
+        overflow-y: hidden;
+        transition: transform 300ms ease;
+        transform: scaleY(0);
+        transform-origin: top;
+        padding-left: 30px;
+    }
 
-mat-tab-group {
-    text-align: center;
-}
+    .submenu.expanded {
+        transform: scaleY(1);
+    }
 
-mat-tab-group p {
-    padding-top: 20px;
-}
+    .mat-toolbar.mat-primary {
+        background: #7583cd;
+    }
 
+    .layout-wrapper {
+        height: 100%;
+    }
+
+    .flex-wrapper {
+        height: 100%;
+    }
+}

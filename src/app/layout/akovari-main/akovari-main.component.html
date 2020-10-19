@@ -1,29 +1,34 @@
-<section fxLayout="column" fxFlexAlign="stretch">
-  <div class="akos-page">
-    <div fxFlexAlign="center" class="align-welcome">
-      <p>Ákos Kővári's page</p>
-      <div>
-        <div class="pub-item-subtitle">
-          My graduation is Aircraft Engineer BSC.(HU) Budapest University of Technology and Economics, Aeronautical departmentand, I'm a Glider Pilot.
-        </div>
-        <label class="pub-item-title">Graduates and Certificates</label>
-        <div>
-          <img class="img-responsive" [src]="kaDiploma">
-        </div>
-        <div>
-          <img class="img-responsive" [src]="kankh">
-        </div>
-        <div>
-          <img class="img-responsive" [src]="kaSilverWreathImagePath">
-        </div>
-        <div class="pub-item-subtitle">
-          <label class="pub-item-title">First flying in a "new" glider plane - 2017.07.19.</label>
-          <video class="img-responsive" controls (click)="playVideo($event)" #videoPlayer>
-              <source src="{{ videoSource }}" type="video/mp4" />
-              Browser not supported
-          </video>
-      </div>
-      </div>
+<div class="akovari-main-content">
+  <mat-toolbar color="primary" class="akovari-toolbar">
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click)="isExpanded = !isExpanded">
+        <mat-icon>menu</mat-icon>
+      </button>
     </div>
-  </div>
-</section>
+    <h1 class="akovari-app-name">{{ pageOwner }}'s page</h1>
+  </mat-toolbar>
+  <mat-sidenav-container class="akovari-container" autosize>
+    <mat-sidenav #sidenav class="akovari-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+      (mouseleave)="mouseleave()">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-home'">
+          <mat-icon mat-list-icon>home</mat-icon>Home
+        </a>
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-about-me'">
+          <mat-icon mat-list-icon>person</mat-icon>About Me
+        </a>
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-certifications'">
+          <mat-icon mat-list-icon>school</mat-icon>Certifications
+        </a>
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-video'">
+          <mat-icon mat-list-icon>video_library</mat-icon>Video
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <div class="bkovari-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-container>
+</div>
