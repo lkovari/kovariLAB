@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'KovariLAB';
-  lastUpdate = new Date('10/19/2020 10:00 PM');
+  lastUpdate = new Date('10/20/2020 04:48 PM');
 
   /*
   @HostListener('contextmenu', ['$event'])
