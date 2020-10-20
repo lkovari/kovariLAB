@@ -31,10 +31,4 @@ export class AkovariMainComponent implements OnInit {
       this.isShowing = false;
     }
   }
-
-
-  playVideo(event: Event) {
-    this.videoplayer.nativeElement.play();
-    console.log('playVideoCalled' + event);
-  }
 }
