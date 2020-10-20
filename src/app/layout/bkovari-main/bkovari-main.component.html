@@ -1,12 +1,13 @@
 <div class="bkovari-main-content">
   <mat-toolbar color="primary" class="bkovari-toolbar">
-    <div fxShow="true" fxHide.gt-sm>
+    <div fxHide.gt-xs>
       <button mat-icon-button (click)="isExpanded = !isExpanded">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
     <h1 class="bkovari-app-name">{{ pageOwner }}'s page</h1>
   </mat-toolbar>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
   <mat-sidenav-container class="bkovari-container" autosize>
     <mat-sidenav #sidenav class="bkovari-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
       (mouseleave)="mouseleave()">
@@ -31,4 +32,5 @@
     </div>
 
   </mat-sidenav-container>
+  </div>
 </div>

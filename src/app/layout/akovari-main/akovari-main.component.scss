@@ -16,6 +16,31 @@
         user-select: none;
     }
 
+    .akovari-toolbar {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover, a:active{
+            color: lightgray;
+        }
+        
+        .navigation-items{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        mat-toolbar{
+            border-radius: 3px;
+        }
+        
+        .home-url {
+            padding-right: 0.5rem;
+        }
+    }
+
     .full-width {
         width: 100%;
     }
@@ -51,5 +76,11 @@
 
     .flex-wrapper {
         height: 100%;
+    }
+
+    @media(max-width: 959px){
+        mat-toolbar{
+            border-radius: 0px;
+        }
     }
 }
