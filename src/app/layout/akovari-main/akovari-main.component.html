@@ -12,16 +12,16 @@
     <mat-sidenav #sidenav class="akovari-sidenav" mode="side" opened="false" (mouseenter)="mouseenter()"
       (mouseleave)="mouseleave()">
       <mat-nav-list>
-        <a mat-list-item [routerLink]="'/akovari-main/akovari-home'">
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-home'" (click)="sidenav.toggle()">
           <mat-icon mat-list-icon>home</mat-icon>Home
         </a>
-        <a mat-list-item [routerLink]="'/akovari-main/akovari-about-me'">
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-about-me'" (click)="sidenav.toggle()">
           <mat-icon mat-list-icon>person</mat-icon>About Me
         </a>
-        <a mat-list-item [routerLink]="'/akovari-main/akovari-certifications'">
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-certifications'" (click)="sidenav.toggle()">
           <mat-icon mat-list-icon>school</mat-icon>Certifications
         </a>
-        <a mat-list-item [routerLink]="'/akovari-main/akovari-video'">
+        <a mat-list-item [routerLink]="'/akovari-main/akovari-video'" (click)="sidenav.toggle()">
           <mat-icon mat-list-icon>video_library</mat-icon>Video
         </a>
       </mat-nav-list>
