@@ -1,4 +1,8 @@
 .bkovari-main-content {
+    flex: 1 1 auto;
+    .mat-drawer-container {
+        height: 100%;
+    }
     .bkovari-container {
         height: calc(100vh - 10rem);
         border: 1px solid rgba(0, 0, 0, 0.5);

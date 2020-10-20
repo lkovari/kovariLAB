@@ -1,11 +1,20 @@
-.akovari-home-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-
+.akos-home-content {
     color: #3f51b5;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-shadow: 1px 3px 5px grey;
-    margin: 2rem 0;
+    margin: 1rem;
+    text-align: center;
+
+    @media screen and (max-width: 992px) {
+        body {
+            font-size: 1.25rem;
+        }
+    }
+     
+    @media screen and (max-width: 600px) {
+        body {
+            font-size: 1rem;
+        }
+    }    
+
 }
