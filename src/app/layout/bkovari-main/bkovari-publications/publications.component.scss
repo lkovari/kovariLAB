@@ -9,6 +9,12 @@
     text-shadow: 1px 3px 5px grey;
     margin: 2rem 0;
 
+    .img-responsive {
+        width: 3%;
+        height: auto;
+        float: center;
+        border-radius: 2%;
+    }
 
     @media screen and (max-width: 992px) {
         font-size: 1.25rem;
