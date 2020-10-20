@@ -1,9 +1,12 @@
 .akos-video-content {
+    display: flex;
+    flex-direction: row;
+
     color: #3f51b5;
     font-size: 1.5rem;
     text-shadow: 1px 3px 5px grey;
     margin: 1rem;    
-    text-align: center;
+
     .img-responsive {
         width: 77%;
         height: auto;
@@ -13,10 +16,6 @@
 
     .align-welcome {
         text-align: center;
-    }
-
-    .pub-item-title {
-        font-weight: bold;
     }
 
     @media screen and (max-width: 992px) {
