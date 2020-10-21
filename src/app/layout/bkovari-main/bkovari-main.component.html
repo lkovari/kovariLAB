@@ -1,6 +1,6 @@
 <div class="bkovari-main-content">
   <mat-toolbar color="primary" class="bkovari-toolbar">
-    <div *ngIf="showMenuIcon">
+    <div fxShow="true" fxHide.gt-sm>
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
@@ -9,18 +9,18 @@
   </mat-toolbar>
   <div>
   <mat-sidenav-container class="bkovari-container" autosize>
-    <mat-sidenav #sidenav class="bkovari-sidenav" mode="side" opened="false">
+    <mat-sidenav #sidenav class="bkovari-sidenav" mode="side" opened="true">
       <mat-nav-list>
-        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-home'" (click)="sidenav.toggle()">
+        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-home'" (click)="onMenuItemClick($event)">
           <mat-icon mat-list-icon>home</mat-icon>Home
         </a>
-        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-about-me'" (click)="sidenav.toggle()">
+        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-about-me'" (click)="onMenuItemClick($event)">
           <mat-icon mat-list-icon>person</mat-icon>About Me
         </a>
-        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-publications'" (click)="sidenav.toggle()">
+        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-publications'" (click)="onMenuItemClick($event)">
           <mat-icon mat-list-icon>book</mat-icon>Publications
         </a>
-        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-tdk'" (click)="sidenav.toggle()">
+        <a mat-list-item [routerLink]="'/bkovari-main/bkovari-tdk'" (click)="onMenuItemClick($event)">
           <mat-icon mat-list-icon>description</mat-icon>TDK.
         </a>
       </mat-nav-list>

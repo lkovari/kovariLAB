@@ -1,39 +1,35 @@
-import { Component, OnInit, ViewChild, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-
 
 @Component({
   selector: 'app-bkovari-main',
   templateUrl: './bkovari-main.component.html',
   styleUrls: ['./bkovari-main.component.scss']
 })
-export class BkovariMainComponent implements OnInit, AfterViewInit {
+export class BkovariMainComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
   pageOwner = 'Bálint Kővári';
-  showMenuIcon = false;
   private SCREEN_WIDTH_LIMIT = 992;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
       if (event.target.innerWidth < this.SCREEN_WIDTH_LIMIT) {
         this.sidenav.close();
-        this.showMenuIcon = true;
       } else {
         this.sidenav.open();
-        this.showMenuIcon = false;
       }
   }
+
+  constructor() { }
 
   ngOnInit() {
   }
 
-  ngAfterViewInit(): void {
+
+  onMenuItemClick(event: MouseEvent) {
     if (window.innerWidth < this.SCREEN_WIDTH_LIMIT) {
       this.sidenav.close();
-      this.showMenuIcon = true;
-    } else {
-      this.sidenav.open();
-      this.showMenuIcon = false;
     }
+    console.log('onMenuItemClick ' + event);
   }
 }
