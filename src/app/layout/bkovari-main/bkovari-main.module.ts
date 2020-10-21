@@ -9,6 +9,7 @@ import { AboutMeComponent } from './bkovari-about-me/about-me.component';
 import { PublicationsComponent } from './bkovari-publications/publications.component';
 import { BkovariHomeComponent } from './bkovari-home/bkovari-home.component';
 import { TDKComponent } from './bkovari-tdk/tdk.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [BkovariMainComponent, AboutMeComponent, PublicationsComponent, BkovariHomeComponent, TDKComponent],
@@ -18,6 +19,7 @@ import { TDKComponent } from './bkovari-tdk/tdk.component';
     FormsModule,
     SharedModule,
     MaterialModule,
+    FlexLayoutModule,
     BkovariMainRoutingModule
   ]
 })

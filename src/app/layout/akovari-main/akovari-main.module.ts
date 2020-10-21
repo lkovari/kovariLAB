@@ -9,6 +9,7 @@ import { AboutMeComponent } from './akovari-about-me/about-me.component';
 import { AkovariHomeComponent } from './akovari-home/akovari-home.component';
 import { AkovariCertComponent } from './akovari-certifications/akovari-cert.component';
 import { AkovariVideoComponent } from './akovari-video/akovari-video.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AkovariMainComponent, AboutMeComponent, AkovariHomeComponent, AkovariVideoComponent, AkovariCertComponent],
@@ -18,6 +19,7 @@ import { AkovariVideoComponent } from './akovari-video/akovari-video.component';
     FormsModule,
     SharedModule,
     MaterialModule,
+    FlexLayoutModule,
     AkovariMainRoutingModule
   ]
 })

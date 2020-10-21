@@ -12,8 +12,6 @@ export class AkovariMainComponent implements OnInit, AfterViewInit {
   kaDiploma = 'assets/images/AkosGraduation2020.jpg';
   @ViewChild('videoPlayer') videoplayer: ElementRef;
   videoSource = 'assets/images/AkosTestAndTry20170719_164515.mp4';
-  isExpanded = true;
-  isShowing = false;
   showMenuIcon = false;
   private SCREEN_WIDTH_LIMIT = 992;
 
@@ -29,18 +27,6 @@ export class AkovariMainComponent implements OnInit, AfterViewInit {
   }
 
   constructor() { }
-
-  mouseenter() {
-    if (!this.isExpanded) {
-      this.isShowing = true;
-    }
-  }
-
-  mouseleave() {
-    if (!this.isExpanded) {
-      this.isShowing = false;
-    }
-  }
 
   ngOnInit() {
   }
