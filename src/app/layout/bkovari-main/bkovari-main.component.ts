@@ -13,10 +13,11 @@ export class BkovariMainComponent implements OnInit, AfterViewInit {
   isExpanded = true;
   isShowing = false;
   showMenuIcon = false;
+  private SCREEN_WIDTH_LIMIT = 992;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-      if (event.target.innerWidth < 992) {
+      if (event.target.innerWidth < this.SCREEN_WIDTH_LIMIT) {
         this.sidenav.close();
         this.showMenuIcon = true;
       } else {
@@ -41,6 +42,12 @@ export class BkovariMainComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.sidenav.open();
+    if (window.innerWidth < this.SCREEN_WIDTH_LIMIT) {
+      this.sidenav.close();
+      this.showMenuIcon = true;
+    } else {
+      this.sidenav.open();
+      this.showMenuIcon = false;
+    }
   }
 }

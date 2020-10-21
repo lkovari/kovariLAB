@@ -1,21 +1,29 @@
-<section fxLayout="column" fxFlexAlign="stretch">
-  <div class="home-screen">
-  <div fxFlexAlign="center" class="align-welcome">
-    <p>Welcome to the KőváriLAB website</p>
-  </div>
-  <mat-tab-group fxFlexAlign="center" mat-align-tabs="center" (selectedTabChange)="executeSelectedChange($event)">
-    <mat-tab label="L"> 
-      <p class="pub-item-subtitle">László Kővári, senior software developer, the author and owner of this website.</p> 
-    </mat-tab>
-    <mat-tab label="Á">
-       <p class="pub-item-subtitle">Ákos Kővári, received a B.Sc. degree in vehicle engineering from Budapest University of Technology and Economics Aeronautical department, Budapest, Hungary, in 2020.</p>
-      </mat-tab>
-    <mat-tab label="B">
-       <p class="pub-item-subtitle">Bálint Kővári, received a B.Sc. degree in vehicle 
-        engineering from Budapest University of Technology and Economics, Budapest, Hungary, in 2018, and an M.Sc degree in Autonomous Vehicle Control Engineering in 2020.
-        Since 2020, he has been a PhD student at the Department of Control for Transportation and Vehicle Systems, Budapest University of Technology and Economics. His research interest includes artificial intelligence, machine learning, vehicle dynamics, and mechatronics.</p>
-      </mat-tab>
-  </mat-tab-group>
-  <label class="last-update">Last update: {{ lastUpdateDate | date:'MM/dd/yyyy HH:mm' }}</label>
-  </div>
-</section>
+<div class="home-content">
+  <section fxLayout="column" fxFlexAlign="stretch">
+    <div class="home-screen">
+      <div fxFlexAlign="center" class="align-welcome">
+        <p>Welcome to the KőváriLAB website</p>
+      </div>
+      <mat-tab-group fxFlexAlign="center" mat-align-tabs="center" (selectedTabChange)="executeSelectedChange($event)">
+        <mat-tab label="L">
+          <p class="pub-item-subtitle">László Kővári, senior software developer, the author and owner of this website.
+          </p>
+        </mat-tab>
+        <mat-tab label="Á">
+          <p class="pub-item-subtitle">Ákos Kővári, received a B.Sc. degree in vehicle engineering from Budapest
+            University of Technology and Economics Aeronautical department, Budapest, Hungary, in 2020. Currently a
+            cadet at Wizz Air Pilot Academy.</p>
+        </mat-tab>
+        <mat-tab label="B">
+          <p class="pub-item-subtitle">Bálint Kővári, received a B.Sc. degree in vehicle
+            engineering from Budapest University of Technology and Economics, Budapest, Hungary, in 2018, and an M.Sc
+            degree in Autonomous Vehicle Control Engineering in 2020.
+            Since 2020, he has been a PhD student at the Department of Control for Transportation and Vehicle Systems,
+            Budapest University of Technology and Economics. His research interest includes artificial intelligence,
+            machine learning, vehicle dynamics, and mechatronics.</p>
+        </mat-tab>
+      </mat-tab-group>
+      <label class="last-update">Last update: {{ lastUpdateDate | date:'MM/dd/yyyy HH:mm' }}</label>
+    </div>
+  </section>
+</div>
