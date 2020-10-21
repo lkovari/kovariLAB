@@ -1,5 +1,5 @@
 
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +8,13 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'KovariLAB';
-
+  /*
   @HostListener('contextmenu', ['$event'])
   onRightClick(event) {
     console.log('Right click functionality blocked.');
     event.preventDefault();
   }
-
+  */
   ngOnInit() {
   }
 
