@@ -1,13 +1,13 @@
 <div class="bkovari-main-content">
   <mat-toolbar color="primary" class="bkovari-toolbar">
-    <div fxHide.gt-xs>
+    <div *ngIf="showMenuIcon">
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
     <h1 class="bkovari-app-name">{{ pageOwner }}'s page</h1>
   </mat-toolbar>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <div>
   <mat-sidenav-container class="bkovari-container" autosize>
     <mat-sidenav #sidenav class="bkovari-sidenav" mode="side" opened="false" (mouseenter)="mouseenter()"
       (mouseleave)="mouseleave()">

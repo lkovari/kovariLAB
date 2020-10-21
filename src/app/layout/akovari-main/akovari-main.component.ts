@@ -1,24 +1,33 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener, AfterViewInit } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-akovari-main',
   templateUrl: './akovari-main.component.html',
   styleUrls: ['./akovari-main.component.scss']
 })
-export class AkovariMainComponent implements OnInit {
+export class AkovariMainComponent implements OnInit, AfterViewInit {
+  @ViewChild('sidenav') sidenav: MatSidenav;
   pageOwner = 'Ákos Kővári';
   kaDiploma = 'assets/images/AkosGraduation2020.jpg';
   @ViewChild('videoPlayer') videoplayer: ElementRef;
   videoSource = 'assets/images/AkosTestAndTry20170719_164515.mp4';
   isExpanded = true;
-  showSubmenu = false;
   isShowing = false;
-  showSubSubMenu = false;
+  showMenuIcon = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+      if (event.target.innerWidth < 992) {
+        this.sidenav.close();
+        this.showMenuIcon = true;
+      } else {
+        this.sidenav.open();
+        this.showMenuIcon = false;
+      }
+  }
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
   mouseenter() {
     if (!this.isExpanded) {
@@ -30,5 +39,12 @@ export class AkovariMainComponent implements OnInit {
     if (!this.isExpanded) {
       this.isShowing = false;
     }
+  }
+
+  ngOnInit() {
+  }
+
+  ngAfterViewInit(): void {
+    this.sidenav.open();
   }
 }
