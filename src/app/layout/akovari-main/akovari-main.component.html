@@ -7,7 +7,6 @@
     </div>
     <h1 class="akovari-app-name">{{ pageOwner }}'s page</h1>
   </mat-toolbar>
-  <div> 
   <mat-sidenav-container class="akovari-container" autosize>
     <mat-sidenav #sidenav class="akovari-sidenav" mode="side" opened="true">
       <mat-nav-list>
@@ -25,11 +24,8 @@
         </a>
       </mat-nav-list>
     </mat-sidenav>
-
     <div class="akovari-sidenav-content">
       <router-outlet></router-outlet>
     </div>
-
   </mat-sidenav-container>
-  </div>
 </div>
