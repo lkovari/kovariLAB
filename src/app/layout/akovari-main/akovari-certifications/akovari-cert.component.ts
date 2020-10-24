@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AkovariCertComponent implements OnInit {
   kaSilverWreathImagePath = 'assets/images/KovariAkosEzustkoszoru.png';
+  kaJuly102016Igctracklog = 'assets/images/AkosKovari_July102016_403Km_5h33mGlidingFlight.png';
   kankh = 'assets/images/AkosSPL.jpg';
 
   constructor() { }
