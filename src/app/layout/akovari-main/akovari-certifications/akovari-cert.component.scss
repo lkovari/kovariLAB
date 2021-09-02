@@ -18,10 +18,18 @@
         border-radius: 2%;
     }
     @media screen and (max-width: 992px) {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
-     
+    
     @media screen and (max-width: 600px) {
-        font-size: 1rem;
-    }    
+        font-size: 0.7rem;
+    } 
+    td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;        
+    }
+    .top-gap {
+        margin-top: 1rem;;
+    }
 }

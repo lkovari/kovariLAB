@@ -11,6 +11,7 @@ import { AkovariCertComponent } from './akovari-certifications/akovari-cert.comp
 import { AkovariVideoComponent } from './akovari-video/akovari-video.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+
 @NgModule({
   declarations: [AkovariMainComponent, AboutMeComponent, AkovariHomeComponent, AkovariVideoComponent, AkovariCertComponent],
   exports: [AkovariMainComponent, AboutMeComponent, AkovariHomeComponent, AkovariVideoComponent, AkovariCertComponent],

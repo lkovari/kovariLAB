@@ -3,7 +3,34 @@
         <img class="img-responsive" [src]="kankh">
     </div-->
     <div>
+        <div title="Civil Aviation Athority" class="text-uppercase">
+            Pilot Academy CAA. Exams.
+        </div>
         <div>
+            <table style="width:100%; table-layout:fixed; overflow-x: auto;">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Ocurrence</th>
+                        <th>Percent</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exam of ntaExams; let ix = index">
+                        <td title="{{exam.date | date :'MM/dd/YYYY'}}">{{exam.date | date : 'MM/dd/YYYY' }}</td>
+                        <td>{{exam.code}}</td>
+                        <td title="{{exam.name}}">{{exam.name}}</td>
+                        <td>{{exam.occurrence}}.</td>
+                        <td>{{exam.percent}}%</td>
+                        <td>{{exam.result}}</td>
+                    </tr>
+                </tbody>
+              </table>            
+        </div>
+        <div class="text-uppercase top-gap">
             FAI. Glider Pilot Silver Badge
         </div>
         <div>
