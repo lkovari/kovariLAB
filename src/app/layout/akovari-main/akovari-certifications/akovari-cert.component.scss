@@ -17,19 +17,17 @@
         border: 1px solid blue;
         border-radius: 2%;
     }
+    table, td, th {
+        border: 1px solid #3F51B5;
+    }
+    .top-gap {
+        margin-top: 1rem;;
+    }
     @media screen and (max-width: 992px) {
         font-size: 1.1rem;
     }
     
     @media screen and (max-width: 600px) {
         font-size: 0.7rem;
-    } 
-    td {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;        
-    }
-    .top-gap {
-        margin-top: 1rem;;
-    }
+    }     
 }
