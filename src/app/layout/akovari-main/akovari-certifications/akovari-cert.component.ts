@@ -15,14 +15,16 @@ export class AkovariCertComponent implements OnInit {
     { date: new Date('04/20/2021'), code: '031', name: 'Mass & Balance', occurrence: 1, percent: 92, result: ExamResult.PASSED },
     { date: new Date('04/20/2021'), code: '032', name: 'Performance (Aeroplane)', occurrence: 1, percent: 83, result: ExamResult.PASSED },
     { date: new Date('04/20/2021'), code: '081', name: 'Principles of Flight (Aeroplane)', occurrence: 1, percent: 90, result: ExamResult.PASSED },
-    { date: new Date('10/05/2021'), code: '', name: '', occurrence: 0, percent: 0, result: null },
-    { date: new Date('10/05/2021'), code: '', name: '', occurrence: 0, percent: 0, result: null },
-    { date: new Date('10/05/2021'), code: '', name: '', occurrence: 0, percent: 0, result: null },
-    { date: new Date('10/05/2021'), code: '', name: '', occurrence: 0, percent: 0, result: null }
+    { date: new Date('10/05/2021'), code: '040', name: 'Human Performance', occurrence: 1, percent: 87, result: ExamResult.PASSED },
+    { date: new Date('10/05/2021'), code: '050', name: 'Meteorology', occurrence: 1, percent: 94, result: ExamResult.PASSED },
+    { date: new Date('10/05/2021'), code: '091', name: 'VFR Communication', occurrence: 1, percent: 91, result: ExamResult.PASSED },
+    { date: new Date('10/05/2021'), code: '092', name: 'IFR Communication', occurrence: 1, percent: 95, result: ExamResult.PASSED }
   ];
+  averagePercent = 0;
 
   constructor() { }
 
   ngOnInit() {
+    this.averagePercent = this.ntaExams.reduce((sum, item) => sum + item.percent, 0) / this.ntaExams.length / 100;
   }
 }

@@ -24,11 +24,19 @@
                         <td>{{exam.code}}</td>
                         <td title="{{exam.name}}">{{exam.name}}</td>
                         <td>{{exam.occurrence}}.</td>
-                        <td>{{exam.percent}}%</td>
+                        <td>{{exam.percent}}</td>
                         <td>{{exam.result}}</td>
                     </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="text-primary">Average</td>
+                        <td></td>
+                        <td class="text-primary">{{ averagePercent | percent : '2.2' }}</td>
+                        <td></td>
+                    </tr>
                 </tbody>
-              </table>            
+              </table>         
         </div>
         <div class="text-uppercase top-gap">
             FAI. Glider Pilot Silver Badge
