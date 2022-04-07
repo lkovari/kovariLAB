@@ -21,8 +21,9 @@ export class AkovariCertComponent implements OnInit {
     { date: new Date('10/05/2021'), code: '092', name: 'IFR Communication', occurrence: 1, percent: 95, result: ExamResult.PASSED },
     { date: new Date('01/25/2022'), code: '061', name: 'General Navigation', occurrence: 1, percent: 89, result: ExamResult.PASSED },
     { date: new Date('01/25/2022'), code: '062', name: 'Radio Navigation', occurrence: 1, percent: 92, result: ExamResult.PASSED },
-    { date: new Date('01/25/2022'), code: '070', name: 'Operational Procedures', occurrence: 1, percent: 93, result: ExamResult.PASSED }
-
+    { date: new Date('01/25/2022'), code: '070', name: 'Operational Procedures', occurrence: 1, percent: 93, result: ExamResult.PASSED },
+    { date: new Date('04/07/2022'), code: '022', name: 'Instrumentation', occurrence: 1, percent: 98, result: ExamResult.PASSED },
+    { date: new Date('04/07/2022'), code: '033', name: 'Flight Planning and Monitoring', occurrence: 1, percent: 92, result: ExamResult.PASSED }
   ];
   averagePercent = 0;
 
