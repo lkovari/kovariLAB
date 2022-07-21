@@ -22,7 +22,7 @@
                     <tr *ngFor="let exam of ntaExams; let ix = index">
                         <td title="{{exam.date | date :'MM/dd/YYYY'}}">{{exam.date | date : 'MM/dd/YYYY' }}</td>
                         <td>{{exam.code}}</td>
-                        <td title="{{exam.name}}">{{exam.name}}</td>
+                        <td class="fit-to-cell" title="{{exam.name}}">{{exam.name}}</td>
                         <td>{{exam.occurrence}}.</td>
                         <td>{{exam.percent}}</td>
                         <td>{{exam.result}}</td>
@@ -37,6 +37,9 @@
                     </tr>
                 </tbody>
               </table>         
+        </div>
+        <div class="text-uppercase top-gap">
+            ATPL(A) <a href="assets/KovariAkos_ATPLCERT.pdf" target="_blank" rel="noopener noreferrer">CERTIFICATE</a>
         </div>
         <div class="text-uppercase top-gap">
             FAI. Glider Pilot Silver Badge

@@ -9,7 +9,10 @@
     color: #3f51b5;
     font-size: 1.4rem;
     text-shadow: 1px 3px 5px grey;
-    
+
+    .fit-to-cell {
+        word-wrap: break-word;
+    }
     .img-responsive {
         width: 75%;
         height: auto;
