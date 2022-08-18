@@ -63,7 +63,9 @@ export class AkovariMainComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-    this.initializeSideNav();
+    setTimeout(() => {
+      this.initializeSideNav();
+    });
   }
 
   onMenuItemClick(event: MouseEvent) {
