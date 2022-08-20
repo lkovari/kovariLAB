@@ -40,8 +40,7 @@
     // , "strictBindCallApply": true
     // false raises compiler errors about unreachable code
     ,"allowUnreachableCode": false
-    ,"allowUnusedLabels": false,
-    
+    ,"allowUnusedLabels": false
   },
   "angularCompilerOptions": {
     // When true (recommended), reports an error for a supplied parameter whose injection type cannot be determined
