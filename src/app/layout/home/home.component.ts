@@ -7,7 +7,7 @@ import * as angular from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  lastUpdateDate = new Date('08/18/2022 11:51 PM');
+  lastUpdateDate = new Date('08/20/2022 08:58 PM');
   constructor() { }
 
   ngOnInit() {
