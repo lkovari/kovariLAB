@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "gitbuild": "ng build --configuration production --aot --base-href /KLHome/dist",
+    "gitbuild": "ng build --configuration production --aot --base-href /KovariLAB/dist",
     "test": "ng test",
     "test-ci": "TEST_CI=true ng test",
     "lint": "ng lint",
