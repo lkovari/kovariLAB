@@ -33,6 +33,9 @@ export class AkovariCertComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.ntaExams.sort((exam1, exam2) => {
+      return (exam1.date && exam2.date) ? exam2.date.getTime() - exam1.date.getTime() : 0;
+    });
     this.averagePercent = this.ntaExams.reduce((sum, item) => sum + item.percent, 0) / this.ntaExams.length / 100;
   }
 }
